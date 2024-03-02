@@ -1,6 +1,6 @@
 .background {
     /* Set background color, image, or any other desired properties */
-    background: linear-gradient(to right, black, lightgrey);
+    background: linear-gradient(to right, #585858, #585858);
     /* Add more background properties as needed */
 }
 
@@ -34,7 +34,7 @@
 
 .btn {
     display: inline-block;
-    background-color: #585858; /* Set your desired button color */
+    background-color: #454545; /* Set your desired button color */
     color: #fff; /* Set your desired button text color */
     padding: 10px 20px; /* Adjust padding as needed */
     text-decoration: none;
@@ -43,5 +43,5 @@
 }
 
 .btn:hover {
-    background-color: #3c3c3c; /* Set your desired button hover color */
+    background-color: #232323; /* Set your desired button hover color */
 }
