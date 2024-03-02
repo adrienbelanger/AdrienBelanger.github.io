@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Make sure the path to your CSS file is correct -->
+    <title>Adrien's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="background">
     <header class="welcome-header">
         <div class="header-content">
-            <h1>Adrien Belanger</h1>
-            <h2>....</h2>
-            <p>yooooooooo</p>
-            <a href="#portfolio" class="btn">View Portfolio</a>
+            <h1>Adrien Bélanger</h1>
+            <button class="menu-button" onclick="toggleSidebar()">Open Sidebar</button> <!-- Button to open sidebar -->
         </div>
     </header>
+    <div id="sidebar" class="sidebar">
+        <!-- Sidebar content goes here -->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+    
+    <!-- Additional content goes here -->
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    
+    <script src="script.js"></script> <!-- Include JavaScript file -->
 </body>
 </html>

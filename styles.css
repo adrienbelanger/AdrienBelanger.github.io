@@ -1,47 +1,49 @@
+/* Define a class for the background */
 .background {
-    /* Set background color, image, or any other desired properties */
-    background: linear-gradient(to right, #585858, #585858);
+    /* Use linear gradient for background */
+    background: linear-gradient(to bottom, #ffffff, #f0ff8f); /* Adjust colors as needed */
     /* Add more background properties as needed */
 }
 
-
-.welcome-header {
-    
-    padding: 100px 0; /* Adjust padding as needed */
-    text-align: center; /* Center align all text */
-}
-
 .header-content {
-    max-width: 800px;
-    margin: 0 auto;
+    position: relative;
 }
 
-.welcome-header h1 {
-    font-size: 3em; /* Adjust font size as needed */
-    margin-bottom: 10px;
+.menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #473a3a;
+    border: none;
+    border-radius: 0 0 0 10px; /* Rounded corners only on the bottom left */
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hide sidebar initially */
+    width: 250px; /* Set sidebar width */
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    z-index: 999; /* Ensure sidebar appears above other content */
+    transition: right 0.3s ease; /* Add transition effect */
 }
 
-.welcome-header h2 {
-    font-size: 1.5em; /* Adjust font size as needed */
-    color: #a5a5a5; /* Set your desired text color */
-    margin-bottom: 20px;
+.sidebar.open {
+    right: 0; /* Open sidebar */
 }
 
-.welcome-header p {
-    font-size: 1.2em; /* Adjust font size as needed */
-    margin-bottom: 30px;
-}
 
-.btn {
-    display: inline-block;
-    background-color: #454545; /* Set your desired button color */
-    color: #fff; /* Set your desired button text color */
-    padding: 10px 20px; /* Adjust padding as needed */
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
     text-decoration: none;
-    border-radius: 5px; /* Adjust border radius as needed */
-    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #232323; /* Set your desired button hover color */
+.sidebar a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
 }
