@@ -1,25 +1,29 @@
-/* Define a class for the background */
-.background {
-    /* Use linear gradient for background */
-    background: linear-gradient(to bottom, #ffffff, #f0ff8f); /* Adjust colors as needed */
-    /* Add more background properties as needed */
+/* Apply the gradient directly to the html element */
+html {
+    background: linear-gradient(to bottom, #1A237E, #273366, #E0E0E0);
+    height: 100%; /* Ensure full height */
 }
 
-.header-content {
-    position: relative;
+/* Optionally, set the body background to transparent */
+body {
+    background-color: transparent;
+    height: 100%; /* Ensure full height */
+    overflow: hidden; /* Hide overflow content */
 }
 
-.menu-button {
-    position: absolute;
+
+
+.overlay {
+    position: fixed;
     top: 0;
-    right: 0;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #473a3a;
-    border: none;
-    border-radius: 0 0 0 10px; /* Rounded corners only on the bottom left */
-    cursor: pointer;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    z-index: 998; /* Ensure overlay appears below the sidebar */
+    display: none; /* Initially hidden */
 }
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -36,6 +40,22 @@
     right: 0; /* Open sidebar */
 }
 
+/* Rest of your CSS styles */
+.header-content {
+    position: relative;
+}
+
+.menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #473a3a;
+    border: none;
+    border-radius: 0 0 0 10px; /* Rounded corners only on the bottom left */
+    cursor: pointer;
+}
 
 .sidebar a {
     display: block;
@@ -47,3 +67,5 @@
 .sidebar a:hover {
     background-color: #f0f0f0; /* Background color on hover */
 }
+
+
