@@ -1,7 +1,14 @@
+.background {
+    /* Set background color, image, or any other desired properties */
+    background: linear-gradient(to right, black, lightgrey);
+    /* Add more background properties as needed */
+}
+
+
 .welcome-header {
-    background-color: #f8f9fa; /* Set your desired background color */
+    
     padding: 100px 0; /* Adjust padding as needed */
-    text-align: center;
+    text-align: center; /* Center align all text */
 }
 
 .header-content {
@@ -16,7 +23,7 @@
 
 .welcome-header h2 {
     font-size: 1.5em; /* Adjust font size as needed */
-    color: #6c757d; /* Set your desired text color */
+    color: #a5a5a5; /* Set your desired text color */
     margin-bottom: 20px;
 }
 
@@ -27,7 +34,7 @@
 
 .btn {
     display: inline-block;
-    background-color: #007bff; /* Set your desired button color */
+    background-color: #585858; /* Set your desired button color */
     color: #fff; /* Set your desired button text color */
     padding: 10px 20px; /* Adjust padding as needed */
     text-decoration: none;
@@ -36,5 +43,5 @@
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Set your desired button hover color */
+    background-color: #3c3c3c; /* Set your desired button hover color */
 }
