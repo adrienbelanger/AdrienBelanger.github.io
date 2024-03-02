@@ -1,0 +1,40 @@
+.welcome-header {
+    background-color: #f8f9fa; /* Set your desired background color */
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-header h1 {
+    font-size: 3em; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.welcome-header h2 {
+    font-size: 1.5em; /* Adjust font size as needed */
+    color: #6c757d; /* Set your desired text color */
+    margin-bottom: 20px;
+}
+
+.welcome-header p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* Set your desired button color */
+    color: #fff; /* Set your desired button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    border-radius: 5px; /* Adjust border radius as needed */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Set your desired button hover color */
+}
