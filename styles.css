@@ -1,16 +1,18 @@
-/* Apply the gradient directly to the html element */
 html {
-    background: linear-gradient(to bottom, #1A237E, #273366, #E0E0E0);
+    background: #f4f4f4;
     height: 100%; /* Ensure full height */
 }
 
-/* Optionally, set the body background to transparent */
+
 body {
     background-color: transparent;
     height: 100%; /* Ensure full height */
     overflow: hidden; /* Hide overflow content */
 }
 
+h1 {
+    color:#333
+}
 
 
 .overlay {
@@ -49,11 +51,12 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 5px 10px;
+    font-size: 100;
+    background-color: #8a8a8a;
     color: #473a3a;
     border: none;
-    border-radius: 0 0 0 10px; /* Rounded corners only on the bottom left */
+    border-radius: 0 0 0 0px; /* Rounded corners only on the bottom left */
     cursor: pointer;
 }
 
