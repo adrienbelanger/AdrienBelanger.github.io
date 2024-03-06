@@ -143,5 +143,10 @@ h1 {
 .substitle_image {
     font-size: 18px;
     line-height: 1;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+}
+
+.text-image {
+    font-size: 15px;
+    line-height: 1.5;
 }
