@@ -3,7 +3,6 @@ html {
     height: 100%; /* Ensure full height */
 }
 
-
 body {
     background-color: transparent;
     height: 100%; /* Ensure full height */
@@ -70,5 +69,3 @@ h1 {
 .sidebar a:hover {
     background-color: #f0f0f0; /* Background color on hover */
 }
-
-
