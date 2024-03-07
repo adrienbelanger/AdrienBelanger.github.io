@@ -55,7 +55,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0px 20px;
+    padding: 10px 20px;
     font-size: 30px;
     background-color: transparent;
     color: #333;
@@ -80,7 +80,7 @@ h1 {
     text-align: center;
     font-size: 100px;
     line-height: 1;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .subtext {
@@ -149,4 +149,26 @@ h1 {
 .text-image {
     font-size: 15px;
     line-height: 1.5;
+}
+
+.footer-container {
+display: flex;
+}
+
+.linkedinlogo img {
+    
+    max-width: 5%;
+}
+
+#header-sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #f4f4f4;
+    padding-top: 20px; /* Set initial padding */
+    padding-bottom: 20px;
+    transition: padding 0.3s ease, background-color 0.3s ease; /* Add transition effect for padding */
+    
 }

@@ -9,18 +9,20 @@
     <link rel="icon" href="/Materials/favicon.png">
 </head>
 <body class="background">
-    <header class="welcome-header">
-        <div class="header-content">
-            <h1 class="h1-title">Portfolio</h1>
-            <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
+    <div id="header-sidebar-container">
+        <header class="welcome-header">
+            <div class="header-content">
+                <h1 class="h1-title">Portfolio</h1>
+                <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
+            </div>
+        </header>
+        <div id="sidebar" class="sidebar">
+            <!-- Sidebar content goes here -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a> 
         </div>
-    </header>
-    <div id="sidebar" class="sidebar">
-        <!-- Sidebar content goes here -->
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a> 
     </div>
     <div id="overlay" class="overlay" onclick="closeSidebar()"></div> 
     
@@ -32,8 +34,6 @@
     <div id="subtext" class="subtext">
         <br>
         BSc Computer Science at McGill, Chief Data Manager at STIM Group
-        
-       
     </div>
 
 
@@ -65,6 +65,12 @@
         </div>
     </div>
     <footer>
+        <div class="footer-container">
+            <a class="linkedinlogo" href="https://www.linkedin.com/in/adrien-b%C3%A9langer-77611a199/">
+                <img src="https://www.svgrepo.com/show/333568/linkedin-square.svg" >
+              </a>
+            
+        </div>
         
     </footer>
     
