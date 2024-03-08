@@ -8,6 +8,8 @@ body {
     height: 100%; /* Ensure full height */
     overflow: auto; /* Hide overflow content */
     font-family: 'Inter', sans-serif;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 h1 {
@@ -53,16 +55,18 @@ h1 {
 
 .menu-button {
     position: absolute;
-    top: 0;
+    top: 50%; /* Align the top of the button with the vertical center of the header-content */
+    transform: translateY(-50%); /* Adjust for half of the button's height */
     right: 0;
     padding: 10px 20px;
     font-size: 30px;
     background-color: transparent;
     color: #333;
     border: none;
-    border-radius: 0 0 0 0px; 
+    border-radius: 0 0 0 0px;
     cursor: pointer;
 }
+
 
 .sidebar a {
     display: block;
@@ -91,8 +95,8 @@ h1 {
 
 .container {
     padding-top: 100px;
-    padding-left: 60px;
-    padding-right: 20px;
+    
+    
     display: flex;
     align-items: center;
 }
@@ -152,13 +156,24 @@ h1 {
 }
 
 .footer-container {
-display: flex;
+    position: relative;
+    padding-top: 50px;
+    height: 50px
+
 }
 
+
 .linkedinlogo img {
-    
-    max-width: 5%;
+    max-width: 50px;
+    height: auto;
 }
+
+.linkedinlogo {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+}
+
 
 #header-sidebar-container {
     position: fixed;
