@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="icon" href="/Materials/favicon.png">
+    <script>
+        window.onload = function() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                document.getElementById("message").innerText = "Hey the mobile version is still under construction, sorry! But you can definitely try and open it on desktop :)";
+            }
+        };
+        </script>
 </head>
 <body class="background">
+    <div id="message"></div>
     <div id="header-sidebar-container">
         <header class="welcome-header">
             <div class="header-content">
@@ -61,19 +70,22 @@
             </div>
         </div>
         <div class="image-container-estime">
-            <img src="Materials/mac_pic.webp">
+            <img src="Materials/estimepic.jpg">
         </div>
     </div>
-    <footer>
-        <div class="footer-container">
-            <a class="linkedinlogo" href="https://www.linkedin.com/in/adrien-b%C3%A9langer-77611a199/">
-                <img src="https://www.svgrepo.com/show/333568/linkedin-square.svg" >
-              </a>
-            
-        </div>
-        
-    </footer>
+
     
     <script src="script.js"></script>
-</body>
+</body>    <footer>
+        <div class="footer-container">
+            <a class="linkedinlogo" href="https://www.linkedin.com/in/adrien-b%C3%A9langer-77611a199/">
+                <img src="Materials/linkedin-square.svg" >
+              </a>
+        </div>
+        <div class="footer-container">
+            <a class="githublogo" href="https://github.com/AdrienBelanger">
+                <img src="Materials/github-square.svg" >
+              </a>
+        </div>
+    </footer>
 </html>

@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Adrien's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-        <link rel="icon" href="/Materials/favicon.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adrien's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="icon" href="/Materials/favicon.png">
+    <script>
+        window.onload = function() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                document.getElementById("message").innerText = "Hey the mobile version is still under construction, sorry! But you can definitely try and open it on desktop :)";
+            }
+        };
+        </script>
+</head>
+<body class="background">
+    <div id="message"></div>
+    <div id="header-sidebar-container">
+        <header class="welcome-header">
+            <div class="header-content">
+                <h1 class="h1-title">Portfolio</h1>
+                <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
+            </div>
+        </header>
+        <div id="sidebar" class="sidebar">
+            <!-- Sidebar content goes here -->
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a> 
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="closeSidebar()"></div> 
+    
 
-    <body>
-        <div id="header-sidebar-container">
-            <header class="welcome-header">
-                <div class="header-content">
-                    <h1 class="h1-title">Portfolio</h1>
-                    <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
-                </div>
-            </header>
-            <div id="sidebar" class="sidebar">
-                <!-- Sidebar content goes here -->
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a> 
+    <div id="subtext" class="subtext">
+        <br>
+        <br>
+        <br>
+        <br>
+        Here is a selection of some of my favorite projects I worked on in the past year.
+    </div>
+
+    <div class="project-container">
+        <div class="project">
+            <img src="Materials/project 1.jpg" alt="Project 1">
+            <div class="project-info">
+                <h2>Revamping of the Écoles Estime website</h2>
+                <p>Took part in major revamping of design and optimisation of my work's main landing page and general website. Started from design, and brought project to development and release.
+                    
+
+                </p>
             </div>
         </div>
-        <div id="overlay" class="overlay" onclick="closeSidebar()"></div> 
+        <div class="project">
+            <img src="Materials/google-maps-image - project 1.png" alt="Project 2">
+            <div class="project-info">
+                <h2>Employee - Workplace Assignation Solution</h2>
+                <p>Using the Google Maps API, I developed a solution assigning employees and their workplace, optimizing travel-time and the use of company resources. Some of the draft files of the project (the parts I'm allowed to share) can be found on my Git!</p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+  
 
-    </body>
     <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <a class="linkedinlogo" href="https://www.linkedin.com/in/adrien-b%C3%A9langer-77611a199/">
+            <img src="Materials/linkedin-square.svg" >
+          </a>
+    </div>
+    <div class="footer-container">
+        <a class="githublogo" href="https://github.com/AdrienBelanger">
+            <img src="Materials/github-square.svg" >
+          </a>
+    </div>
+</footer>
+</html>

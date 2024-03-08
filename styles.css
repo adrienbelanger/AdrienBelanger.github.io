@@ -1,6 +1,7 @@
 html {
     background: #f4f4f4;
     height: 100%; /* Ensure full height */
+    color:#333
 }
 
 body {
@@ -38,7 +39,7 @@ h1 {
     right: -250px; /* Hide sidebar initially */
     width: 250px; /* Set sidebar width */
     height: 100%;
-    background-color: #fff;
+    background-color: #f4f4f4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
     z-index: 999; /* Ensure sidebar appears above other content */
     transition: right 0.3s ease; /* Add transition effect */
@@ -85,18 +86,17 @@ h1 {
     font-size: 100px;
     line-height: 1;
     padding-top: 100px;
+    padding-left: 15px;
 }
 
 .subtext {
     font-size: 20px;
     text-align: center;
-    
+    padding-left: 15px;
 }
 
 .container {
-    padding-top: 100px;
-    
-    
+    padding-top: 80px;
     display: flex;
     align-items: center;
 }
@@ -113,7 +113,7 @@ h1 {
     object-fit: fill;
     height: auto; /* Maintain the image's aspect ratio */
     filter: brightness(0.9) contrast(0.85);
-    
+    aspect-ratio: 1.2;
 }
 
 .image-container-estime img {
@@ -122,7 +122,7 @@ h1 {
     object-fit: fill;
     height: auto; /* Maintain the image's aspect ratio */
     filter: brightness(0.9) contrast(0.85);
-    
+    aspect-ratio: 1.2;
 }
 
 .text-container-r {
@@ -156,23 +156,25 @@ h1 {
 }
 
 .footer-container {
-    position: relative;
-    padding-top: 50px;
-    height: 50px
-
+    position: relative; /* Set position to relative */
+    margin-top: 100px; /* Add some space above the footer */
 }
 
-
-.linkedinlogo img {
-    max-width: 50px;
-    height: auto;
+.githublogo {
+    position: absolute; /* Position GitHub logo relative to footer container */
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 35px; /* Position it to the right */
 }
 
 .linkedinlogo {
-    position: absolute;
+    position: absolute; /* Position LinkedIn logo relative to footer container */
     bottom: 20px; /* Adjust the distance from the bottom as needed */
-    right: 20px; /* Adjust the distance from the right as needed */
+    right: 0px; /* Position it to the right */
 }
+
+
+
+
 
 
 #header-sidebar-container {
@@ -186,4 +188,109 @@ h1 {
     padding-bottom: 20px;
     transition: padding 0.3s ease, background-color 0.3s ease; /* Add transition effect for padding */
     
+}
+
+
+
+
+.githublogo img {
+    max-width: 30px;
+    height: auto;
+}
+
+.linkedinlogo img {
+    max-width: 30px;
+    height: auto;
+}
+
+
+
+/* Style for the form */
+.contact-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #cccccc;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #c2c2c2;
+}
+
+
+h3 {
+        color:#333;
+        text-align: center;
+        font-size: 25px;
+        padding-left: 20px;
+}
+
+
+.main-content {
+    padding-top: 20px;
+}
+
+.about-section {
+    margin-top: 20px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-image {
+    max-width: 300px;
+    height: 600px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.project-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    display: flex;
+}
+
+.project img {
+    width: 30%;
+    height: 20%;
+    margin-right: 20px;
+    aspect-ratio: 1.5;
+}
+
+.project-info {
+    flex: 1;
 }

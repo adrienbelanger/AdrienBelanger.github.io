@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About - Adrien's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-        <link rel="icon" href="/Materials/favicon.png">
-    </head>
-
-    <body>
-        <div id="header-sidebar-container">
-            <header class="welcome-header">
-                <div class="header-content">
-                    <h1 class="h1-title">About</h1>
-                    <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
-                </div>
-            </header>
-            <div id="sidebar" class="sidebar">
-                <!-- Sidebar content goes here -->
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Adrien's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Materials/favicon.png">
+    <script>
+        window.onload = function() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                document.getElementById("message").innerText = "Hey the mobile version is still under construction, sorry! But you can definitely try and open it on desktop :)";
+            }
+        };
+        </script>
+</head>
+<body class="background">
+    <div id="message"></div>
+    <div id="header-sidebar-container">
+        <header class="welcome-header">
+            <div class="header-content">
+                <h1 class="h1-title">About</h1>
+                <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
             </div>
+        </header>
+        <div id="sidebar" class="sidebar">
+            <!-- Sidebar content goes here -->
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a> 
         </div>
-        <div id="overlay" class="overlay" onclick="closeSidebar()"></div> 
+    </div>
+    <div id="overlay" class="overlay" onclick="closeSidebar()"></div> 
+    <br>
+    <div class="main-content">
+        <section class="about-section">
+            <br>
+            <div class="about-content">
+               
+                <img src="Materials/basic side image.jpeg" alt="Adrien" class="about-image">
+                <div class="text-content">
+                    
 
-    </body>
-    <script src="script.js"></script>
+                    <h2>About Me</h2>
+                    <p>Hey! I'm Adrien, the creator of this website. I'm a 21 year old McGill student, with passions for a great many things.
+                        Outside of my work, I enjoy working out, playing music and cooking! 
+                        This website serves as a canvas for me to showcase my work, my interests and my aspirations. So, please take a look around and thanks for visiting!
+                        <br>
+                        <br>
+                        Cheers,<br>
+                        Adrien
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<footer>
+    <div class="footer-container">
+        <a class="linkedinlogo" href="https://www.linkedin.com/in/adrien-b%C3%A9langer-77611a199/">
+            <img src="Materials/linkedin-square.svg" >
+        </a>
+    </div>
+    <div class="footer-container">
+        <a class="githublogo" href="https://github.com/AdrienBelanger">
+            <img src="Materials/github-square.svg" >
+        </a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
