@@ -11,7 +11,7 @@
         window.onload = function() {
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             if (isMobile) {
-                document.getElementById("message").innerText = "Hey the mobile version is still under construction, sorry! But you can definitely try and open it on desktop :)";
+                window.location.href = "nomobile.html"; // Redirect to nomobile.html if on mobile
             }
         };
         </script>
