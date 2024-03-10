@@ -19,19 +19,19 @@
 <body class="background">
     <div id="message"></div>
     <div id="header-sidebar-container">
-        <header class="welcome-header">
-            <div class="header-content">
+        <div id="header-container">
+            <header class="welcome-header">
                 <h1 class="h1-title">Portfolio</h1>
                 <button class="menu-button" onclick="toggleSidebar()">&#9776;</button> 
-            </div>
-        </header>
+            </header>
+        </div>
         <div id="sidebar" class="sidebar">
-            <!-- Sidebar content goes here -->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a> 
         </div>
+        <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
     </div>
     <div id="overlay" class="overlay" onclick="closeSidebar()"></div> 
     
